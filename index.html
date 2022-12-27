@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <script>
+      agua = 40;
+      luz = 50;
+      internet = 80;
+      cursos = 97;
+      mercado = 800;
+      aluguel = 1200;
+      porcentagemInvestir = 30 / 100;
+      despesas = agua + luz + internet + cursos + mercado + aluguel;
+
+      salario15 = parseInt(prompt(" digite o valor do salario dia 15: "));
+      salario30 = parseInt(prompt(" digite o valor do salario dia 30: "));
+
+      salarioTotal = salario15 + salario30;
+
+      calculo = salarioTotal - despesas;
+      investimento = calculo * porcentagemInvestir;
+      diversao = calculo - investimento;
+
+      if (calculo >= 0) {
+        document.write(
+          "<h1>Parabens voce tem um montante de CAD " +
+            investimento +
+            " para poder investir e CAD " +
+            diversao +
+            " para tua diversao </h1>"
+        );
+      } else {
+        document.write(
+          "<h1>Opa voce precisa economizar pois as despesas estao maiores que o teu salario mensal, voce esta no negativo de CAD " +
+            calculo +
+            "</h1>"
+        );
+      }
+    </script>
+    <h1></h1>
+  </body>
+</html>
